@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Resolvaki</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="page-content page-container" id="page-content">
+      <div class="padding">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card card-bordered">
+              <div
+                class="card-header text-center bg-info text-white border-0 rounded-top"
+              >
+                <h4 class="card-title fw-bold mb-0">Resolvaki Chat</h4>
+              </div>
+
+              <div
+                class="ps-container ps-theme-default ps-active-y"
+                id="chat-content"
+                style="overflow-y: scroll !important; height: 400px !important"
+              ></div>
+
+              <div
+                class="publisher bt-1 border-light d-flex align-items-center"
+              >
+                <img
+                  class="avatar avatar-xs d-none d-md-block"
+                  src="https://img.icons8.com/color/36/000000/administrator-male.png"
+                  alt="..."
+                />
+                <form id="chat-form" class="d-flex w-100">
+                  <input
+                    id="message-input"
+                    class="publisher-input form-control"
+                    type="text"
+                    placeholder="Digite sua mensagem"
+                    required
+                  />
+                  <button
+                    id="send-button"
+                    class="publisher-btn text-info"
+                    type="submit"
+                  >
+                    <i class="fa fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
